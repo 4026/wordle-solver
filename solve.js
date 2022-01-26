@@ -25,7 +25,7 @@ const { loadWords, guess, handleGuessResult } = require("./commonFunctions");
     console.log("Use N for incorrect letters, Y for correct letters, P for letters in the correct position.\n");
 
     let remainingWords = words;
-    while (true)
+    while (remainingWords.length > 0)
     {
         console.log(`\n${remainingWords.length} words left...`);
         if (mustContain.length > 0) {
